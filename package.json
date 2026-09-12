@@ -1,0 +1,40 @@
+{
+  "name": "mahonega-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3010",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 3010",
+    "lint": "eslint .",
+    "test": "node --experimental-strip-types --test tests/contact.test.ts",
+    "format": "prettier --write src tests scripts *.mjs *.json docs README.md",
+    "format:check": "prettier --check src tests scripts *.mjs *.json docs README.md"
+  },
+  "dependencies": {
+    "@radix-ui/react-select": "^2.3.7",
+    "lucide-react": "^0.563.0",
+    "next": "^16.3.4",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "resend": "^6.18.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.3.4",
+    "lighthouse": "^13.4.1",
+    "prettier": "^3.9.6",
+    "sharp": "^0.35.4",
+    "subset-font": "^2.7.0",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "wawoff2": "^2.0.1"
+  },
+  "type": "module"
+}
