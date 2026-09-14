@@ -186,7 +186,19 @@ export default function Products() {
             <p className="eyebrow">TAMBIÉN TRABAJAMOS CON</p>
             <div>
               {brands.slice(2).map((b) => (
-                <span key={b}>{b}</span>
+                <span key={b}>
+                  {b === "CDV" ? (
+                    <Image
+                      className="brand-cdv-inline"
+                      src="/images/cdv-logo.webp"
+                      alt="CDV"
+                      width={96}
+                      height={30}
+                    />
+                  ) : (
+                    b
+                  )}
+                </span>
               ))}
             </div>
           </div>

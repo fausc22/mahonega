@@ -2334,3 +2334,19 @@ img {
     animation: gentle-in 0.15s ease-out;
   }
 }
+
+.brand-cdv img {
+  display: block;
+  width: 157px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+.brand-cdv-inline {
+  display: block;
+  width: 96px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+.all-brands > div {
+  align-items: center;
+}

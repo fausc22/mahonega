@@ -50,3 +50,10 @@ Dominio definitivo y credenciales Resend; confirmación comercial de la selecci�
 ## Revisión de portada
 
 La portada usa ahora `hero-rodeo.avif` (escritorio) y `hero-rodeo-mobile.avif` (móvil), recortes de la fotografía real del rodeo, sin contenido generado. La fotografía anterior de la camioneta queda disponible como recurso de entregas. Las fuentes para la web se regeneran con `node scripts/prepare-fonts.mjs`; el subconjunto conserva caracteres latinos extendidos, acentos combinados, puntuación y monedas.
+
+## Actualización de marcas y destacados (septiembre de 2026)
+
+- Carreteles Rafaela: incorporada por confirmación del cliente a las marcas de inicio y productos.
+- Clostrimiq PH y Airmix: primeros en la selección y destacados del inicio, junto a Bioabortogen H. Se mantienen las otras alternativas del catálogo.
+- Fotos oficiales: https://biochemiq.com/wp-content/uploads/2021/09/clostrimiq-PH-1.webp y https://biochemiq.com/wp-content/uploads/2021/09/Airmix-1.webp. Optimizadas a WebP de 640 × 640, sin modificar etiquetas.
+- Logo CDV: extraído del pie de la página 2 del catálogo aportado por el cliente (`DOC-20260728-WA0026_260909_145825.pdf`). Conserva símbolo y colores originales. Se muestra en inicio y productos; sustituye la mención tipográfica de CDV.

@@ -50,6 +50,26 @@ export const categories = [
 ] as const;
 export const products = [
   {
+    id: "clostrimiq-ph",
+    name: "Clostrimiq PH",
+    brand: "Biochemiq",
+    category: "vacunas",
+    label: "Biológicos y vacunas",
+    description: "Vacuna de la línea clostridial para bovinos.",
+    image: "/images/clostrimiq-ph.webp",
+    source: "https://biochemiq.com/productos/clostrimiq-ph/",
+  },
+  {
+    id: "airmix",
+    name: "Airmix",
+    brand: "Biochemiq",
+    category: "vacunas",
+    label: "Biológicos y vacunas",
+    description: "Vacuna de la línea respiratoria para bovinos.",
+    image: "/images/airmix.webp",
+    source: "https://biochemiq.com/productos/airmix/",
+  },
+  {
     id: "bioabortogen",
     name: "Bioabortogen H",
     brand: "Biogénesis Bagó",
@@ -114,3 +134,5 @@ export const products = [
   },
 ] as const;
 export type Product = (typeof products)[number];
+
+export const featuredProducts = [products[0], products[1], products[2]];

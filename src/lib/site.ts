@@ -20,6 +20,7 @@ export const brands = [
   "Biogénesis Bagó",
   "Biochemiq",
   "CDV",
+  "Carreteles Rafaela",
   "OVER",
   "Vetanco",
   "Zoetis",

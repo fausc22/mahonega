@@ -10,7 +10,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { CategoryGrid, ContactCTA, ProductCard } from "@/components/Shared";
-import { products } from "@/lib/catalog";
+import { featuredProducts } from "@/lib/catalog";
 import { brands, regions } from "@/lib/site";
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 export default function Home() {
@@ -134,16 +134,22 @@ export default function Home() {
             <div className="brand-wordmark biochemiq">
               Biochemiq<span>SALUD ANIMAL</span>
             </div>
-            <div className="brand-featured-copy">
-              Dos protagonistas.
-              <br />
-              <strong>Un mismo compromiso con tu rodeo.</strong>
+            <div className="brand-featured-copy brand-cdv">
+              <Image
+                src="/images/cdv-logo.webp"
+                alt="CDV"
+                width={157}
+                height={49}
+              />
             </div>
           </div>
           <div className="other-brands">
-            {brands.slice(2).map((brand) => (
-              <span key={brand}>{brand}</span>
-            ))}
+            {brands
+              .slice(2)
+              .filter((brand) => brand !== "CDV")
+              .map((brand) => (
+                <span key={brand}>{brand}</span>
+              ))}
           </div>
         </div>
       </section>
@@ -159,7 +165,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="product-grid">
-            {[products[0], products[3], products[4]].map((product) => (
+            {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
