@@ -181,6 +181,22 @@ export default function Products() {
                 </div>
               </ContactLink>
             ))}
+            <ContactLink
+              href="https://over.com.ar/productos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-card"
+              event="catalog_external_click"
+              context="OVER"
+              aria-label="OVER: ver catálogo online (se abre en una nueva pestaña)"
+            >
+              <span className="pdf-label">ONLINE</span>
+              <h3>OVER</h3>
+              <span>Productos y fichas técnicas</span>
+              <div>
+                Ver catálogo online <ArrowUpRight size={20} />
+              </div>
+            </ContactLink>
           </div>
           <div className="all-brands">
             <p className="eyebrow">TAMBIÉN TRABAJAMOS CON</p>
