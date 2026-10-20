@@ -195,6 +195,10 @@ test("Resend configuration mirrors HT with a named sender and configurable recip
   );
   const mail = contactEmail({ ...data, email: "qa@example.com" });
   assert.ok(mail.html.includes("mailto:qa%40example.com"));
+  assert.ok(mail.html.includes("Nueva consulta web"));
+  assert.ok(
+    mail.html.includes("Consulta recibida desde el formulario web de MAHONEGA."),
+  );
   assert.ok(mail.subject.includes("Productos y disponibilidad"));
 });
 

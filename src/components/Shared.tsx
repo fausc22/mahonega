@@ -151,7 +151,18 @@ export function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} MAHONEGA</span>
+        <span>
+          © {new Date().getFullYear()} MAHONEGA
+          {" · "}
+          <a
+            className="footer-credit"
+            href="https://portfolio-cantallops.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Desarrollado por FC SOFTWARE
+          </a>
+        </span>
         <span>Insumos veterinarios · Atención a productores</span>
         <Link href="/privacidad">Privacidad</Link>
       </div>
